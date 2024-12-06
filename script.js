@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const optionsUrl = "https://script.google.com/macros/s/AKfycbyKTIEey_gQB-IY7Iun5yuKV-8_6wiTGe6CUGba5OAvBqwYmy22QoGmfJ-BJ1lvslQ/exec"; // Reemplaza con la URL del Apps Script doGet
+  const optionsUrl = https://script.google.com/macros/s/AKfycbyKTIEey_gQB-IY7Iun5yuKV-8_6wiTGe6CUGba5OAvBqwYmy22QoGmfJ-BJ1lvslQ/exec; // Reemplaza con la URL del Apps Script doGet
   fetch(optionsUrl)
     .then(r => r.json())
     .then(data => {
@@ -35,7 +35,7 @@ document.getElementById('data-form').addEventListener('submit', function(e) {
     obj[key] = value;
   });
 
-  const postUrl = "https://script.google.com/macros/s/AKfycbyKTIEey_gQB-IY7Iun5yuKV-8_6wiTGe6CUGba5OAvBqwYmy22QoGmfJ-BJ1lvslQ/exec"; // Reemplaza con la misma URL del Apps Script
+  const postUrl = https://script.google.com/macros/s/AKfycbyKTIEey_gQB-IY7Iun5yuKV-8_6wiTGe6CUGba5OAvBqwYmy22QoGmfJ-BJ1lvslQ/exec; // Reemplaza con la misma URL del Apps Script
   
   fetch(postUrl, {
     method: "POST",
