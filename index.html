@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Horario</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Registro de Horario</h1>
+  <form id="data-form">
+    <div class="form-group">
+      <label>Año</label>
+      <select name="Año" required></select>
+    </div>
+
+    <div class="form-group">
+      <label>Semestre</label>
+      <select name="Semestre" required></select>
+    </div>
+
+    <div class="form-group">
+      <label>Profesor</label>
+      <select name="Profesor" required></select>
+    </div>
+
+    <div class="form-group">
+      <label>Asignatura</label>
+      <select name="Asignatura" required></select>
+    </div>
+
+    <div class="form-group">
+      <label>Horas Pedagógicas</label>
+      <input type="number" name="HorasPedagogicas" min="1" placeholder="Ej: 2" required>
+    </div>
+
+    <div class="form-group">
+      <label>Tipo de Clase</label>
+      <select name="TipoClase" required></select>
+    </div>
+
+    <div class="form-group">
+      <label>Día de la Semana</label>
+      <select name="DiaSemana" required>
+        <option value="">Seleccione</option>
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miércoles">Miércoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Hora Inicio</label>
+      <input type="time" name="HoraInicio" required>
+    </div>
+
+    <div class="form-group">
+      <label>Hora Fin</label>
+      <input type="time" name="HoraFin" required>
+    </div>
+
+    <div class="form-group">
+      <label>Ciudad</label>
+      <select name="Ciudad" required></select>
+    </div>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <div id="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
