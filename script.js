@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const optionsUrl = https://script.google.com/macros/s/AKfycbyKTIEey_gQB-IY7Iun5yuKV-8_6wiTGe6CUGba5OAvBqwYmy22QoGmfJ-BJ1lvslQ/exec; // Reemplaza con la URL del Apps Script doGet
+  const optionsUrl = https://script.google.com/macros/s/AKfycbwQtAQHeKAX4krFluck6F8PUkxZjKmOe6WfcqqsgDo/dev; // Reemplaza con la URL del Apps Script doGet
   fetch(optionsUrl)
     .then(r => r.json())
     .then(data => {
-      fillSelect('Año', data.Año);
+      fillSelect('Años', data.Años);
       fillSelect('Semestre', data.Semestre);
-      fillSelect('Profesor', data.Profesor);
-      fillSelect('Asignatura', data.Asignatura);
+      fillSelect('Profesores', data.Profesoress)
+      fillSelect('Asignaturas', data.Asignaturas);
       fillSelect('TipoClase', data.TipoClase);
       fillSelect('Ciudad', data.Ciudad);
     })
